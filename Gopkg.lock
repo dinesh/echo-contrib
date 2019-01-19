@@ -8,14 +8,17 @@
   version = "v3.0.0"
 
 [[projects]]
-  branch = "master"
-  name = "github.com/StackExchange/wmi"
-  packages = ["."]
-  revision = "5d049714c4a64225c3c79a7cf7d02f7fb5b96338"
-
-[[projects]]
   name = "github.com/casbin/casbin"
-  packages = [".","config","file-adapter","model","persist","rbac","rbac/default-role-manager","util"]
+  packages = [
+    ".",
+    "config",
+    "file-adapter",
+    "model",
+    "persist",
+    "rbac",
+    "rbac/default-role-manager",
+    "util"
+  ]
   revision = "3a17f2855cc12ad36fd614c590b9d18f46dfd65d"
   version = "v1.4.0"
 
@@ -30,18 +33,6 @@
   packages = ["."]
   revision = "dbeaa9332f19a944acb5736b4456cfcc02140e29"
   version = "v3.1.0"
-
-[[projects]]
-  name = "github.com/go-ole/go-ole"
-  packages = [".","oleutil"]
-  revision = "a41e3c4b706f6ae8dfbff342b06e40fa4d2d0506"
-  version = "v1.2.1"
-
-[[projects]]
-  name = "github.com/go-resty/resty"
-  packages = ["."]
-  revision = "00cb083b8cdc8b0fb1e1f5ebe24bbc23e0ff0cf6"
-  version = "v1.2"
 
 [[projects]]
   name = "github.com/gorilla/context"
@@ -63,21 +54,23 @@
 
 [[projects]]
   name = "github.com/labstack/echo"
-  packages = [".","middleware"]
+  packages = [
+    ".",
+    "middleware"
+  ]
   revision = "b338075a0fc6e1a0683dbf03d09b4957a289e26f"
   version = "3.2.6"
 
 [[projects]]
   name = "github.com/labstack/gommon"
-  packages = ["bytes","color","log","random"]
+  packages = [
+    "bytes",
+    "color",
+    "log",
+    "random"
+  ]
   revision = "57409ada9da0f2afad6664c49502f8c50fbd8476"
   version = "0.2.3"
-
-[[projects]]
-  name = "github.com/labstack/labstack-go"
-  packages = ["."]
-  revision = "0588dd12ab1b72545bb21294eefd7b20e12f644c"
-  version = "0.20.3"
 
 [[projects]]
   name = "github.com/mattn/go-colorable"
@@ -98,22 +91,16 @@
   version = "v1.0.0"
 
 [[projects]]
-  name = "github.com/shirou/gopsutil"
-  packages = ["cpu","host","internal/common","mem","net","process"]
-  revision = "c432be29ccce470088d07eea25b3ea7e68a8afbb"
-  version = "v2.18.01"
-
-[[projects]]
-  branch = "master"
-  name = "github.com/shirou/w32"
-  packages = ["."]
-  revision = "bb4de0191aa41b5507caa14b0650cdbddcd9280b"
-
-[[projects]]
   name = "github.com/stretchr/testify"
   packages = ["assert"]
   revision = "12b6f73e6084dad08a7c6e575284b177ecafbc71"
   version = "v1.2.1"
+
+[[projects]]
+  branch = "master"
+  name = "github.com/stvp/roll"
+  packages = ["."]
+  revision = "3627a5cbeaeaa68023abd02bb8687925265f2f63"
 
 [[projects]]
   branch = "master"
@@ -130,30 +117,21 @@
 [[projects]]
   branch = "master"
   name = "golang.org/x/crypto"
-  packages = ["acme","acme/autocert"]
+  packages = [
+    "acme",
+    "acme/autocert"
+  ]
   revision = "650f4a345ab4e5b245a3034b110ebc7299e68186"
 
 [[projects]]
   branch = "master"
-  name = "golang.org/x/net"
-  packages = ["idna","publicsuffix"]
-  revision = "cbe0f9307d0156177f9dd5dc85da1a31abc5f2fb"
-
-[[projects]]
-  branch = "master"
   name = "golang.org/x/sys"
-  packages = ["unix","windows"]
+  packages = ["unix"]
   revision = "37707fdb30a5b38865cfb95e5aab41707daec7fd"
-
-[[projects]]
-  branch = "master"
-  name = "golang.org/x/text"
-  packages = ["collate","collate/build","internal/colltab","internal/gen","internal/tag","internal/triegen","internal/ucd","language","secure/bidirule","transform","unicode/bidi","unicode/cldr","unicode/norm","unicode/rangetable"]
-  revision = "4e4a3210bb54bb31f6ab2cdca2edcc0b50c420c1"
 
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "f6a9c10790135852581b16ac6ed6af32bf63242444f66bed089f6215f646be12"
+  inputs-digest = "2abee5d7e169d12476e29f131e19861720f0fc523c4e992b225f717c66a6fd52"
   solver-name = "gps-cdcl"
   solver-version = 1
